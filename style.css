@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+:root{
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Passion One', cursive;
+    --font3:'Passions Conflict', cursive;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 7vh;
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 4.5vh;
+}
+
+section.normal{
+    background-color: rgba(255, 255, 255, 0.525);
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.474);
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.533);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url('imagens/31e20a89798952130bbdc2e7c1cce079.jpg');
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('imagens/ff026aa6cf6f9fceb3096c9d51203ab8.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.botao > h2 {
+    background-color: darkgray;
+    padding: 10px;
+    margin-left: 50%;
+    margin-right: 30%;
+}
